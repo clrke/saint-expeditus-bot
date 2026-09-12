@@ -1,0 +1,17 @@
+{
+  "name": "saint-expeditus",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "bridge-server",
+    "chrome-extension"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.0",
+    "typescript": "^5.7.0"
+  }
+}

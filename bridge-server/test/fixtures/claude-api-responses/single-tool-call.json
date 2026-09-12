@@ -1,0 +1,17 @@
+{
+  "id": "msg_test_single_tool",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "tool_use",
+      "id": "toolu_test_001",
+      "name": "read_memory",
+      "input": { "file": "issues.md" }
+    }
+  ],
+  "model": "claude-sonnet-4-6",
+  "stop_reason": "tool_use",
+  "stop_sequence": null,
+  "usage": { "input_tokens": 150, "output_tokens": 30 }
+}

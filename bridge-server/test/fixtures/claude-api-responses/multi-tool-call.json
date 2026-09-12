@@ -1,0 +1,23 @@
+{
+  "id": "msg_test_multi_tool",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "tool_use",
+      "id": "toolu_test_002",
+      "name": "read_memory",
+      "input": { "file": "issues.md" }
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_test_003",
+      "name": "read_memory",
+      "input": { "file": "residents.md" }
+    }
+  ],
+  "model": "claude-sonnet-4-6",
+  "stop_reason": "tool_use",
+  "stop_sequence": null,
+  "usage": { "input_tokens": 200, "output_tokens": 50 }
+}

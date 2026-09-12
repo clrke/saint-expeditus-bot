@@ -1,0 +1,6 @@
+.env
+.saint-expeditus/
+.attachments/
+node_modules/
+dist/
+.DS_Store

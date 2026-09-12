@@ -1,0 +1,18 @@
+{
+  "name": "chrome-extension",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsx build.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.287",
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.24.0",
+    "jsdom": "^25.0.0",
+    "tsx": "^4.19.0",
+    "vitest": "^3.0.0"
+  }
+}
