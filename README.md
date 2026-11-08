@@ -2,6 +2,16 @@
 
 A Chrome extension + bridge server that monitors the **SAINT EXPEDITUS SUBDIVISION** Facebook Messenger group chat, detects `/expeditus` triggers, and responds via Claude with persistent community memory.
 
+> [!WARNING]
+> **The agent runs in "YOLO mode".** The bridge starts Claude Code with `--dangerously-skip-permissions`, so the
+> agent **never asks before it acts**. It can run any command, read any file (keys and credentials included), push
+> code, publish, send messages and spend money, with the full rights of the user running the bridge. Anyone who can
+> message the bot can steer it, and so can text it reads (prompt injection).
+>
+> **Be careful what you approve:** "yes", "continue" and "make a decision for me" are approvals. Run it as a
+> dedicated user or in a VM, with least-privilege tokens and backups. By using this software you agree to the
+> [Terms of Use and Warnings](TERMS.md). It comes with no warranty, and you are responsible for everything it does.
+
 ## Architecture
 
 ```

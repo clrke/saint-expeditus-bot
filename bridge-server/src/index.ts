@@ -100,6 +100,10 @@ async function start() {
     console.log(`[Bridge] Listening on port ${config.port}`);
     console.log(`[Bridge] Projects dir: ${config.projectsDir}`);
     console.log(`[Bridge] Registered: ${projects.map(p => p.slug).join(', ') || 'none'}`);
+    console.warn(
+      '[Bridge] WARNING: agents run with --dangerously-skip-permissions (YOLO mode): they act without asking, ' +
+      'with this user\'s full rights. Approve carefully; see TERMS.md.',
+    );
   });
 
   // Graceful drain shutdown.
